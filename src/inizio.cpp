@@ -11,14 +11,7 @@
 #include "Meeting.h"
 #include<algorithm>
 using namespace std;
-void
-array_function();
-void array_function() {
-	int array_in_fun[] { 1, 2, 3, 4, 5 };
-	for (int i : array_in_fun) {
-		std::cout << array_in_fun[i] << "\t";
-	}
-}
+
 vector<Meeting> merge_meeting(vector<Meeting> in_vec) {
 	vector<Meeting>::size_type in_vec_len, idx { 0 }, vec_cnt { idx + 1 };
 	vector<Meeting> result;
@@ -43,34 +36,36 @@ vector<Meeting> merge_meeting(vector<Meeting> in_vec) {
 	}
 	return (result);
 }
+std::string rev_str(std::string in_str) {
+	std::string::size_type str_len = in_str.size(), start { 0 }, end { str_len
+			- 1 };
+	while (start < end) {
+		swap(in_str[start++], in_str[end--]);
+	}
+	return (in_str);
+}
 
 int main() {
-	//array_function();
-	//Vector_Operations vow;
-	//vow.count_vowels_str("Pragya");
-	//vow.exer_332_14();
-	//int test_var { 9 };
-	//cout << "test Var: " << test_var;
-	vector<Meeting> ou_v;
-	vector<Meeting> in_v;
-	in_v.push_back(Meeting(0, 1));
-	in_v.push_back(Meeting(3, 5));
-	in_v.push_back(Meeting(4, 8));
-	in_v.push_back(Meeting(10, 12));
-	in_v.push_back(Meeting(9, 10));
-	cout << "before Merge: \n";
-
-	for (Meeting m : in_v) {
-		cout << "Meeting ( " << m.get_start_time() << ", " << m.get_end_time()
-				<< " )\t";
-		cout << endl;
-	}
-	ou_v = merge_meeting(in_v);
-	cout << "After Merge: \n";
-	for (Meeting m : ou_v) {
-		cout << "Meeting ( " << m.get_start_time() << ", " << m.get_end_time()
-				<< " )";
-		cout << endl;
-	}
-	return 0;
+	/*vector<Meeting> ou_v;
+	 vector<Meeting> in_v;
+	 in_v.push_back(Meeting(0, 1));
+	 in_v.push_back(Meeting(3, 5));
+	 in_v.push_back(Meeting(4, 8));
+	 in_v.push_back(Meeting(10, 12));
+	 in_v.push_back(Meeting(9, 10));
+	 cout << "before Merge: \n";
+	 for (Meeting m : in_v) {
+	 cout << "Meeting ( " << m.get_start_time() << ", " << m.get_end_time()
+	 << " )\t";
+	 cout << endl;
+	 }
+	 ou_v = merge_meeting(in_v);
+	 cout << "After Merge: \n";
+	 for (Meeting m : ou_v) {
+	 cout << "Meeting ( " << m.get_start_time() << ", " << m.get_end_time()
+	 << " )";
+	 cout << endl;
+	 }*/
+	cout << "Rev: " << rev_str("Pragya");
+	return (0);
 }
