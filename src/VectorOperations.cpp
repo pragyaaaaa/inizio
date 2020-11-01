@@ -43,7 +43,7 @@ void Vector_Operations::exer_332_14() {
 	vector<string> in_vec;
 	string word;
 	while (cin >> word) {
-		transform(word.begin(), word.end(), word.begin(), ::toupper);//converting everyword to uppercase
+		transform(word.begin(), word.end(), word.begin(), ::toupper); //converting every word to uppercase uses algorithm from stl
 		in_vec.push_back(word);
 	}
 	vector<string>::size_type str_len, i { 0 };
