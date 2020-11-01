@@ -48,6 +48,7 @@ string rev_str(std::string in_str) {
 	return (in_str);
 }
 
+/*merge two sorted vectors*/
 vector<int> merge_vector(vector<int> vec_1, vector<int> vec_2) {
 	vector<int>::size_type vec_1_len { vec_1.size() },
 			vec_2_len { vec_2.size() }, start_v1 { 0 }, start_v2 { 0 };
