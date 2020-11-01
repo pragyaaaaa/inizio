@@ -5,6 +5,9 @@
  *      Author: Lenovo
  */
 
+/*
+Pointers:
 
+*/
 
 
