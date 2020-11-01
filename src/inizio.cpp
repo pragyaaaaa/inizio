@@ -7,7 +7,7 @@
 //============================================================================
 
 #include <iostream>
-#include "ArraysOperations.h"
+#include "VectorOperations.h"
 using namespace std;
 void
 array_function();
@@ -19,9 +19,9 @@ void array_function() {
 }
 int main() {
 	//array_function();
-	Arrays_Operations vow;
+	Vector_Operations vow;
 	//vow.count_vowels_str("Pragya");
-	cout << vow.count_vowels_str("Pragya");
+	vow.exer_332_14();
 	//int test_var { 9 };
 	//cout << "test Var: " << test_var;
 	return 0;
