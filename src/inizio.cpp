@@ -12,6 +12,7 @@
 #include<algorithm>
 using namespace std;
 
+/*merge meeting*/
 vector<Meeting> merge_meeting(vector<Meeting> in_vec) {
 	vector<Meeting>::size_type in_vec_len, idx { 0 }, vec_cnt { idx + 1 };
 	vector<Meeting> result;
@@ -36,6 +37,7 @@ vector<Meeting> merge_meeting(vector<Meeting> in_vec) {
 	}
 	return (result);
 }
+/*inplace reversing of string*/
 string rev_str(std::string in_str) {
 	string::size_type str_len = in_str.size(), start { 0 }, end { str_len - 1 };
 	while (start < end) {
