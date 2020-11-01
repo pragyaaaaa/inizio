@@ -3,6 +3,8 @@
  *
  *  Created on: 1 Nov 2020
  *      Author: Lenovo
+To learn: 	lambda expressions
+			how to sort a vector of objects based on attribute of object.
  */
 
 #include "Meeting.h"
