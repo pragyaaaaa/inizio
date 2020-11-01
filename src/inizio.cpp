@@ -39,6 +39,8 @@ vector<Meeting> merge_meeting(vector<Meeting> in_vec) {
 }
 /*inplace reversing of string*/
 string rev_str(std::string in_str) {
+	if (in_str.empty())
+		return ("Null");
 	string::size_type str_len = in_str.size(), start { 0 }, end { str_len - 1 };
 	while (start < end) {
 		swap(in_str[start++], in_str[end--]);
@@ -67,6 +69,6 @@ int main() {
 	 << " )";
 	 cout << endl;
 	 }*/
-	cout << "Rev: " << rev_str("Pragya");
+	cout << "Rev: " << rev_str("");
 	return (0);
 }
