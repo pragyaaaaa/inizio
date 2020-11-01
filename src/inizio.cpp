@@ -36,9 +36,8 @@ vector<Meeting> merge_meeting(vector<Meeting> in_vec) {
 	}
 	return (result);
 }
-std::string rev_str(std::string in_str) {
-	std::string::size_type str_len = in_str.size(), start { 0 }, end { str_len
-			- 1 };
+string rev_str(std::string in_str) {
+	string::size_type str_len = in_str.size(), start { 0 }, end { str_len - 1 };
 	while (start < end) {
 		swap(in_str[start++], in_str[end--]);
 	}
