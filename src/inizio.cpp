@@ -85,8 +85,8 @@ int main() {
 	 << " )";
 	 cout << endl;
 	 }*/
-	vector<int> myVector { 3, 4, 6, 10, 11, 15 };
-	vector<int> alicesVector { 1, 5, 8, 12, 14, 19 };
+	vector<int> myVector { 2, 4, 6, 8 };
+	vector<int> alicesVector { 1, 7 };
 	vector<int> mergedVector = merge_vector(myVector, alicesVector);
 	for (int m : mergedVector) {
 		cout << m << "\t";
