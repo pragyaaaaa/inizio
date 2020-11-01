@@ -46,7 +46,8 @@ void Vector_Operations::exer_332_14() {
 		transform(word.begin(), word.end(), word.begin(), ::toupper); //converting every word to uppercase uses algorithm from stl
 		in_vec.push_back(word);
 	}
-	vector<string>::size_type str_len, i { 0 };
+	vector<string>::size_type str_len;
+	vector<string>::size_type i { 0 };
 	int line_size = 0;
 	str_len = in_vec.size();
 	while (i != str_len) {
