@@ -65,6 +65,23 @@ vector<int> merge_vector(vector<int> vec_1, vector<int> vec_2) {
 	return (result);
 
 }
+/*1108. Defanging an IP Address:
+ * Given a valid (IPv4) IP address, return a defanged version of that IP address.
+ * A defanged IP address replaces every period "." with "[.]"
+ * */
+string defangIPaddr(string address) {
+	string a;
+	for (auto i = 0; i < address.size(); i++) {
+		if (address[i] == '.') {
+			a.push_back('[');
+			a.push_back('.');
+			a.push_back(']');
+		} else {
+			a.push_back(address[i]);
+		}
+	}
+	return (a);
+}
 int main() {
 	/*vector<Meeting> ou_v;
 	 vector<Meeting> in_v;
