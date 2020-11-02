@@ -7,7 +7,8 @@
 
 /*
 Pointers:
-
+variable_type *pointer_name {nullptr};
+int *int_ptr {nullptr};: Always initialize pointers.
 */
 
 
