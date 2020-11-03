@@ -110,6 +110,13 @@ const_iterator beg, const_iterator end
 All characters in range [beg,end)
 initlist
 All characters in initlist (since C++11)
+
+std::string s(’x’);
+// ERROR
+std::string s(1,’x’);
+// OK, creates a string that has one character ’x’
+std::string s({’x’});
+// OK, ditto (since C++11)
 */
 
 
