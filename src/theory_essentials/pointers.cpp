@@ -117,6 +117,37 @@ std::string s(1,’x’);
 // OK, creates a string that has one character ’x’
 std::string s({’x’});
 // OK, ditto (since C++11)
+
+string s
+Creates the empty string s
+string s(str)
+Copy constructor; creates a string as a copy of the
+existing string str
+string s(rvStr)
+Move constructor; creates a string and moves the
+contents of rvStr to it (rvStr has a valid state with
+undefined value afterward)
+string s(str,stridx)
+Creates a string s that is initialized by the characters of
+string str starting with index stridx
+string s(str,stridx,strlen)
+Creates a string s that is initialized by, at most, strlen
+characters of string str starting with index stridx
+string s(cstr)
+Creates a string s that is initialized by the C-string cstr
+string s(chars,charslen)
+Creates a string s that is initialized by charslen
+characters of the character array chars
+string s(num,c)
+Creates a string that has num occurrences of character c
+string s(beg,end)
+Creates a string that is initialized by all characters of the
+range [beg,end)
+string s(initlist)
+Creates a string that is initialized by all characters in
+initlist (since C++11)
+s.~string()
+Destroys all characters and frees the memory
 */
 
 
