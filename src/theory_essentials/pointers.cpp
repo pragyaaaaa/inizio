@@ -89,6 +89,27 @@ crbegin(), crend()
 Provide constant reverse iterator support (since C++11)
 get_allocator()
 Returns the allocator
+
+
+const string & str
+The whole string str
+const string & str, size_type idx,
+At most, the first num characters
+size_type num
+of str starting with index idx
+const char* cstr
+The whole C-string cstr
+const char* chars, size_type len
+len characters of the character
+array chars
+char c
+The character c
+size_type num, char c
+num occurrences of character c
+const_iterator beg, const_iterator end
+All characters in range [beg,end)
+initlist
+All characters in initlist (since C++11)
 */
 
 
